@@ -1,9 +1,9 @@
 <header class="post-header">
-    {{#unless hide_tag}}
+    {{#if show_tag}}
         {{#primary_tag}}
             <a class="post-tag" href="{{url}}">{{name}}</a>
         {{/primary_tag}}
-    {{/unless}}
+    {{/if}}
     <{{tag}} class="post-title">
         {{#unless hide_link}}
             <a class="post-title-link" href="{{url}}">{{title}}</a>

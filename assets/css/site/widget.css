@@ -80,6 +80,10 @@
     margin-top: 3px;
 }
 
+.post-reading-time {
+    margin-top: 3px;
+}
+
 @media (max-width: 767px) {
     .widget-title {
         margin-top: 0;

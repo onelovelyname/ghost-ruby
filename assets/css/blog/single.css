@@ -18,11 +18,11 @@
 }
 
 @media (max-width: 767px) {
-    .post-template .site-content > .container,
-    .post-template .site-content > .container .content-column {
-        padding-right: 0;
-        padding-left: 0;
-    }
+    /*.post-template .site-content > .container,*/
+    /*.post-template .site-content > .container .content-column {*/
+    /*    padding-right: 0;*/
+    /*    padding-left: 0;*/
+    /*}*/
 
     .post-template .site-content > .container > .row {
         margin-right: 0;

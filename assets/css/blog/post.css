@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    min-height: 200px;
 }
 
 .post-media {
@@ -21,6 +22,17 @@
     flex-grow: 1;
     padding: 20px;
     background-color: var(--white-color);
+    -webkit-box-flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .post-tag {
@@ -64,11 +76,13 @@
     font-family: serif;
 }
 
-.post-date {
+.post-date, .post-reading-time {
     display: block;
     color: var(--secondary-text-color);
     font-size: 11px;
-    font-weight: 700;
+}
+
+.post-reading-time {
     text-transform: uppercase;
 }
 
@@ -105,10 +119,8 @@
 .post-footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    padding: 20px 0;
     height: 42px;
-    border-top: 1px solid var(--light-gray-color);
     background-color: var(--white-color);
 }
 

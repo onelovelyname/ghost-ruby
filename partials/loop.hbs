@@ -7,13 +7,15 @@
             data-sizes="auto" alt="{{title}}">
     {{/if}}
     {{> post-media same_height=true ratio="rectangle"}}
-    <div class="post-wrapper">
-        {{> post-header tag="h2"}}
-        {{> post-date}}
-        {{#if excerpt}}
-            <div class="post-excerpt">
-                {{excerpt words="12"}}
-            </div>
-        {{/if}}
-    </div>
+    <a class="post-wrapper" href="{{url}}">
+        <div>
+            {{> post-header tag="h2" hide_link=true}}
+            {{#if excerpt}}
+                <div class="post-excerpt">
+                    {{excerpt words="12"}}
+                </div>
+            {{/if}}
+        </div>
+        {{> post-footer reading_time=reading_time}}
+    </a>
 </article>
